@@ -1,0 +1,40 @@
+
+// style of main wrapper/containers incl width, height, margin
+
+@mixin style-wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+
+
+
+// style display flex
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+// colors
+
+@mixin background-color($color) {
+    background-color: $color;
+}
+
+
+
+// sizings - fonts
+
+@mixin font-size($size) {
+    font-size: $size;
+}
