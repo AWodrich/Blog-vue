@@ -1,0 +1,14 @@
+.header {
+    box-sizing: border-box;
+    padding: 1rem;
+
+    &__navigation {
+        @include font-size($secondary-size);
+        @include flex-row;
+        justify-content: flex-end;
+
+        &__item {
+            margin: 1rem;
+        }
+    }
+}

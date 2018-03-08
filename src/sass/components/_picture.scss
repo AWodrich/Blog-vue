@@ -1,0 +1,21 @@
+
+
+
+.picture {
+    width: 100%;
+    height: auto;
+    border: 2px solid yellow;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2rem;
+
+    &--rounded {
+        border-radius: 50%;
+    }
+
+    &--medium-sized {
+        width: 30rem;
+        height: auto;
+    }
+
+}

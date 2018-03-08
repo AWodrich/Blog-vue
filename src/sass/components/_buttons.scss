@@ -1,0 +1,80 @@
+
+.btn {
+    text-align: center;
+    max-width: 100%;
+
+    &__btn-primary:link,
+    &__btn-primary:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        color: $color-grey-dark;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+
+        animation: moveInButton 1s ease-out;
+
+        &--white {
+            background-color: $color-white;
+        }
+
+        &:hover {
+            transform: translateY(-.3rem);
+            // box shadow: offset x direction, offset y direction, blur, color(last number opacity)
+            box-shadow: 0 10px 20px rgba(0,0,0,.2);
+        }
+        // active is the sudo class for clicked elements
+        &:active {
+            transform: translateY(-.1rem);
+            box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        }
+
+        // sudo element to add an element that looks exactly the same than btn, and put it behind the button
+        // so when you hover out of the button the sudo element goes behind the btn again.
+        // with this sudo element, you always need a content property
+        // so this creates a new element
+        &::after {
+            content: '';
+            display: inline-inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 10rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+
+        &:hover::after {
+            // scale increases the element
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+}
+
+.btn__btn-primary--white {
+    background-color: $color-white;
+}
+
+.btn__btn-primary--white::after {
+    background-color: $color-white;
+}
+
+
+
+
+@keyframes moveInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

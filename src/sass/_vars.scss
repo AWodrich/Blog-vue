@@ -1,16 +1,30 @@
 
 // background-colors
-$primary-color: #dfe6ee;
-$secondary-color: #badbed;
-$tertiary-color: #d7eccf;
+$color-primary: #dfe6ee;
+$color-secondary: #badbed;
+$color-tertiary: #d7eccf;
 
+$color-secondary-darken: darken($color-secondary, 20%);
+
+$color-grey-light-1: #f7f7f7;
+
+$color-white: #fff;
+$color-black: #000;
+$color-grey-dark: #777;
 
 // font-sizes
 $primary-size: 2.4rem;
-$secondary-size: 1.8rem;
+$secondary-size: 1.6rem;
 
 
 
 // buttons
 
 $btn-width: 8rem;
+
+
+// GRID
+
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;

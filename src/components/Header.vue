@@ -1,55 +1,35 @@
 <template>
-  <div class="header-wrapper">
-      <div class="header-wrapper__primary-text">
-          <p>Petition</p>
-      </div>
-      <div class="navigation-wrapper">
-          <p class="navigation-wrapper__item">About us</p>
-          <p class="navigation-wrapper__item">Projects</p>
-          <p class="navigation-wrapper__item">Map</p>
-      </div>
-  </div>
+    <div class="header">
+        <div class="heading-primary">
+            <p class="heading-primary--main">LifeHacks</p>
+            <p class="heading-primary--sub">Never stay still</p>
+        </div>
+        <div class="header__navigation">
+            <p class="header__navigation__item">About us</p>
+            <p class="header__navigation__item">Projects</p>
+            <p class="header__navigation__item">Map</p>
+        </div>
+        <Button />
+
+    </div>
 </template>
 
 <script>
+import Button from './Button';
 export default {
-  name: 'Header',
-  data () {
-    return {
+    name: 'Header',
+    data () {
+        return {
+        }
+    },
+    components: {
+        Button
     }
-  }
 }
 </script>
 
 <style lang="scss">
 
-    @import "../sass/vars.scss";
-    @import "../sass/mixins.scss";
+    @import "../sass/main";
 
-    .header-wrapper {
-        @include style-wrapper;
-        @include flex-row;
-        @include background-color($secondary-color);
-
-        box-sizing: border-box;
-        padding: 1rem;
-
-        &__primary-text {
-            @include font-size($primary-size);
-            flex: 1;
-            text-align: center;
-        }
-    }
-
-    .navigation-wrapper {
-        @include font-size($secondary-size);
-        @include flex-row;
-        justify-content: flex-end;
-        flex: 1;
-
-        &__item {
-            margin: 1rem;
-        }
-    }
-    
 </style>

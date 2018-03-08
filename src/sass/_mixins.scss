@@ -38,3 +38,12 @@
 @mixin font-size($size) {
     font-size: $size;
 }
+
+
+
+
+// BEM mixins
+
+@mixin m($el) {
+    @content
+}
