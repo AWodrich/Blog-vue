@@ -7,6 +7,9 @@
 // layouts
 @import "layouts/header";
 
+// pages
+@import "pages/home";
+
 // components
 @import "components/buttons";
 @import "components/picture";
@@ -15,3 +18,6 @@
 
 // GRID
 @import "layouts/grid";
+
+// animations
+@import "animations/animations";

@@ -1,8 +1,10 @@
 <template>
   <section class="section-about">
-      <h2 class="heading-secondary">
-          Petition for anyone to take part
-      </h2>
+      <div class="section-about__text">
+          <h2 class="heading-secondary">
+              Petition for anyone to take part
+          </h2>
+      </div>
   </section>
 </template>
 

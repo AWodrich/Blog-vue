@@ -1,6 +1,7 @@
 .header {
     box-sizing: border-box;
     padding: 1rem;
+    text-align: center;
 
     &__navigation {
         @include font-size($secondary-size);

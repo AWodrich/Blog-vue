@@ -2,15 +2,14 @@
     <div class="header">
         <div class="heading-primary">
             <p class="heading-primary--main">LifeHacks</p>
-            <p class="heading-primary--sub">Never stay still</p>
+            <p class="heading-primary--sub">My new life as a developer</p>
         </div>
         <div class="header__navigation">
-            <p class="header__navigation__item">About us</p>
-            <p class="header__navigation__item">Projects</p>
-            <p class="header__navigation__item">Map</p>
+            <p class="header__navigation__item">About Me</p>
+            <p class="header__navigation__item">Portfolio</p>
+            <p class="header__navigation__item">Topics</p>
         </div>
         <Button />
-
     </div>
 </template>
 

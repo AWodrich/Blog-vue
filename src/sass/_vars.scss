@@ -4,6 +4,9 @@ $color-primary: #dfe6ee;
 $color-secondary: #badbed;
 $color-tertiary: #d7eccf;
 
+$color-primary-light: lighten(#dfe6ee, 1%);
+$color-primary-dark: darken(#dfe6ee, 15%);
+
 $color-secondary-darken: darken($color-secondary, 20%);
 
 $color-grey-light-1: #f7f7f7;

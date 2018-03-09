@@ -14,7 +14,9 @@
         transition: all .2s;
         position: relative;
 
-        animation: moveInButton 1s ease-out;
+        &--animated {
+            animation: moveInButton 4s ease-out;
+        }
 
         &--white {
             background-color: $color-white;
@@ -64,17 +66,6 @@
     background-color: $color-white;
 }
 
-
-
-
-@keyframes moveInButton {
-    0% {
-        opacity: 0;
-        transform: translateY(10rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+.btn__btn-primary--animated {
+    animation: moveInButton 1s ease-out;
 }
