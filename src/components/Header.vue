@@ -2,14 +2,9 @@
     <div class="header">
         <div class="heading-primary">
             <p class="heading-primary--main">LifeHacks</p>
-            <p class="heading-primary--sub">My new life as a developer</p>
+            <p class="heading-primary--sub">Things to put on your bucket list</p>
         </div>
-        <div class="header__navigation">
-            <p class="header__navigation__item">About Me</p>
-            <p class="header__navigation__item">Portfolio</p>
-            <p class="header__navigation__item">Topics</p>
-        </div>
-        <Button />
+        <Button :btnText="btnText"/>
     </div>
 </template>
 
@@ -19,6 +14,7 @@ export default {
     name: 'Header',
     data () {
         return {
+            btnText: 'about'
         }
     },
     components: {

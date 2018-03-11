@@ -1,0 +1,17 @@
+
+.image-composition {
+    // position: relative;
+
+    &__photo {
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        // position: absolute;
+    }
+}
+
+.hovered {
+    border-radius: 30%;
+    box-shadow: 0 2.5rem 4rem rgba($color-black, .6);
+    transform: scaleX(1.4) scaleY(1.6);
+}
